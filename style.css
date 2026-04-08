@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Header */
+header {
+    background: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background: url('https://source.unsplash.com/1600x700/?restaurant') no-repeat center;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+button {
+    background: orange;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Cart */
+#cart {
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media(max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 50px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

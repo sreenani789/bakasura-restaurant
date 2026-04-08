@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakasura Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bakasura Restaurant 🍽️</h1>
+    <nav>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cart">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <h2>Welcome to Bakasura</h2>
+    <p>Eat Like a King 👑</p>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+    <h2>Food Gallery 🍔</h2>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/300x200/?biryani">
+        <img src="https://source.unsplash.com/300x200/?pizza">
+        <img src="https://source.unsplash.com/300x200/?burger">
+        <img src="https://source.unsplash.com/300x200/?curry">
+    </div>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+    <h2>Menu</h2>
+    <div class="menu">
+
+        <div class="card">
+            <h3>Chicken Biryani</h3>
+            <p>₹250</p>
+            <button onclick="addToCart('Chicken Biryani',250)">Add</button>
+        </div>
+
+        <div class="card">
+            <h3>Pizza</h3>
+            <p>₹300</p>
+            <button onclick="addToCart('Pizza',300)">Add</button>
+        </div>
+
+        <div class="card">
+            <h3>Burger</h3>
+            <p>₹150</p>
+            <button onclick="addToCart('Burger',150)">Add</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Cart -->
+<section id="cart">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button onclick="placeOrder()">Place Order</button>
+</section>
+
+<footer>
+    <p>© 2026 Bakasura Restaurant</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
